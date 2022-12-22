@@ -1,0 +1,8 @@
+project: price-parser
+target: fuzz-price-parser
+
+image: ghcr.io/matl4c/fuzz-price-parser:latest
+
+cmds:
+  - cmd: /src/mayhem/fuzz-price-parser.py
+    libfuzzer: true
